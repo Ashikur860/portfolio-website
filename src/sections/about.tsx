@@ -37,7 +37,7 @@ export function AboutSection() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="about" className="relative py-24 overflow-hidden">
+    <section id="about" className="relative py-16 sm:py-20 lg:py-24 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute top-0 left-0 w-[400px] h-[400px] rounded-full bg-primary/5 blur-3xl" />
       <div className="absolute bottom-0 right-0 w-[300px] h-[300px] rounded-full bg-secondary/5 blur-3xl" />

@@ -28,7 +28,7 @@ const researchPapers = [
 
 export function ResearchSection() {
   return (
-    <section id="research" className="relative py-24 overflow-hidden">
+    <section id="research" className="relative py-16 sm:py-20 lg:py-24 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute top-1/2 left-0 w-[500px] h-[500px] -translate-y-1/2 rounded-full bg-primary/5 blur-3xl" />
       

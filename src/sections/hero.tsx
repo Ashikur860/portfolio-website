@@ -356,25 +356,25 @@ export function HeroSection() {
                 <BTCWidget />
               </div>
 
-              {/* Floating decorative elements */}
+              {/* Floating decorative elements - hidden on mobile to prevent overlap */}
               <motion.div
                 animate={{ y: [0, -15, 0], rotate: [0, 5, 0] }}
                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -top-6 -right-6 p-3 rounded-xl glass border border-primary/30"
+                className="hidden sm:block absolute -top-6 -right-6 p-3 rounded-xl glass border border-primary/30 z-20"
               >
                 <span className="text-2xl">⛓️</span>
               </motion.div>
               <motion.div
                 animate={{ y: [0, 15, 0], rotate: [0, -5, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                className="absolute -bottom-4 -left-4 p-3 rounded-xl glass border border-secondary/30"
+                className="hidden sm:block absolute -bottom-4 -left-4 p-3 rounded-xl glass border border-secondary/30 z-20"
               >
                 <span className="text-2xl">🤖</span>
               </motion.div>
               <motion.div
                 animate={{ y: [0, -10, 0] }}
                 transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-                className="absolute top-1/2 -right-8 p-2 rounded-lg glass border border-primary/20"
+                className="hidden lg:block absolute top-1/2 -right-8 p-2 rounded-lg glass border border-primary/20 z-20"
               >
                 <span className="text-lg">📊</span>
               </motion.div>

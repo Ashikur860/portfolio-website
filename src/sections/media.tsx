@@ -48,7 +48,7 @@ const stats = [
 
 export function MediaSection() {
   return (
-    <section id="media" className="relative py-24 overflow-hidden bg-secondary-bg/50">
+    <section id="media" className="relative py-16 sm:py-20 lg:py-24 overflow-hidden bg-secondary-bg/50">
       {/* Background Pattern */}
       <div className="absolute inset-0 grid-bg opacity-30" />
       

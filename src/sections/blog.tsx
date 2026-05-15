@@ -646,7 +646,7 @@ export function BlogSection() {
   const regularPosts = filteredPosts.filter((post) => !post.featured);
 
   return (
-    <section id="blog" className="relative py-24 overflow-hidden">
+    <section id="blog" className="relative py-16 sm:py-20 lg:py-24 overflow-hidden">
       {/* Background */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] rounded-full bg-primary/5 blur-3xl" />
 
@@ -700,7 +700,7 @@ export function BlogSection() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="grid lg:grid-cols-3 gap-8"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
           >
             {/* Featured Post */}
             {featuredPost && (
@@ -708,7 +708,7 @@ export function BlogSection() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="lg:col-span-2 lg:row-span-2"
+                className="md:col-span-2 lg:col-span-2 lg:row-span-2"
               >
                 <div
                   onClick={() => setSelectedPost(featuredPost)}

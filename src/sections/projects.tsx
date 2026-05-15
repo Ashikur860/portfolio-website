@@ -94,7 +94,7 @@ export function ProjectsSection() {
   const otherProjects = projects.filter((p) => !p.featured);
 
   return (
-    <section id="projects" className="relative py-24 overflow-hidden bg-secondary-bg/50">
+    <section id="projects" className="relative py-16 sm:py-20 lg:py-24 overflow-hidden bg-secondary-bg/50">
       {/* Background Pattern */}
       <div className="absolute inset-0 grid-bg opacity-30" />
       

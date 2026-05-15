@@ -44,7 +44,7 @@ const itemVariants = {
 
 export function SkillsSection() {
   return (
-    <section id="skills" className="relative py-24 overflow-hidden bg-secondary-bg/50">
+    <section id="skills" className="relative py-16 sm:py-20 lg:py-24 overflow-hidden bg-secondary-bg/50">
       {/* Background Pattern */}
       <div className="absolute inset-0 grid-bg opacity-30" />
       
@@ -74,7 +74,7 @@ export function SkillsSection() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-8 gap-4"
+          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4"
         >
           {skills.map((skill) => (
             <motion.div

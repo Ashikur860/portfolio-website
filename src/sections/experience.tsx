@@ -65,7 +65,7 @@ const experiences = [
 
 export function ExperienceSection() {
   return (
-    <section id="experience" className="relative py-24 overflow-hidden">
+    <section id="experience" className="relative py-16 sm:py-20 lg:py-24 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
         <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-primary/5 blur-3xl" />
@@ -109,7 +109,7 @@ export function ExperienceSection() {
               }`}
             >
               {/* Timeline Node */}
-              <div className="absolute left-4 md:left-1/2 -translate-x-1/2 z-10">
+              <div className="absolute left-4 md:left-1/2 -translate-x-1/2 z-20">
                 <motion.div
                   whileHover={{ scale: 1.2 }}
                   className={`w-10 h-10 rounded-full bg-gradient-to-br ${exp.color} p-0.5`}
@@ -121,7 +121,7 @@ export function ExperienceSection() {
               </div>
 
               {/* Content Card */}
-              <div className={`ml-16 md:ml-0 md:w-[calc(50%-3rem)] ${
+              <div className={`ml-16 md:ml-0 w-[calc(100%-5rem)] md:w-[calc(50%-3rem)] ${
                 index % 2 === 0 ? "md:pr-8 md:text-right" : "md:pl-8 md:text-left"
               }`}>
                 <div className="glass rounded-2xl p-6 border border-border/50 hover:border-primary/30 transition-all group">

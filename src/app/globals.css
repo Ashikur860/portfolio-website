@@ -96,3 +96,29 @@ html {
   background: rgba(124, 58, 237, 0.3);
   color: #F8FAFC;
 }
+
+/* Prevent horizontal overflow */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* Fix container padding on small screens */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Ensure images don't overflow */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Fix word wrapping */
+body {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
