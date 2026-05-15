@@ -126,7 +126,7 @@ const FloatingParticles = () => {
             y: Math.random() * (typeof window !== 'undefined' ? window.innerHeight : 800),
           }}
           animate={{
-            y: [null, -100, null],
+            y: [0, -100, -200],
             opacity: [0, 1, 0],
           }}
           transition={{
